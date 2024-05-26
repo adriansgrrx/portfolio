@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/fe6459fdca.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="parallax-styles.css">
+    <title>Parallax</title>
+</head>
+<body>
+    <div class="navbar-fixed" style="z-index: 1000;">
+        <nav class="fix-nav">
+            <ul id="fix-nav-dp" class="dropdown-content">
+                <li><a href="#">Manage</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <div class="container">
+                <div class="nav-wrapper fix-nav">
+                    <a href="" class="brand-logo"><i class="fa-solid fa-building-columns"></i></i></a>
+                    <a href="#fix-nav-sv" class="sidenav-trigger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <ul id="nav-mobile " class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="fix-nav-dp">Know us more<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav right" id="fix-nav-sv" style="z-index: 1001;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <div class="divider"></div>
+        <li><a href="#">My Account</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#fix-nav-sv').sidenav();
+            $('.dropdown-trigger').dropdown();
+            $('.fixed-action-btn').floatingActionButton(
+                {
+                    direction: 'top', 
+                }
+            );
+            $('#hor-fab').floatingActionButton(
+                {
+                    direction: 'left', 
+                }
+            );
+            $('#click-fab').floatingActionButton(
+                {
+                    direction: 'left', 
+                    hoverEnabled: false,
+                }
+            );
+            $('#tab-fab').floatingActionButton(
+                {
+                    toolbarEnabled: true
+                }
+            );
+            $('.scrollspy').scrollSpy();
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+</html>
