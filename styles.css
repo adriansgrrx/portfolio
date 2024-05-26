@@ -1,8 +1,53 @@
-html {
-    background: rgb(45,59,98);
-    background: linear-gradient(90deg, rgba(45,59,98,1) 0%, rgba(0,15,49,1) 100%);
+@import url('https://fonts.googleapis.com/css2?family=Poppins-Light:wght@400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 100;
+
 }
+
+.name, .desc{
+    font-weight: 100;
+}
+
+button {
+    .transparent {
+        background-color: transparent;
+        border: 1px solid white; /* Example border color */
+        color: #fff; /* Example text color */
+        
+    }
+
+    /* Hover effect */
+    .transparent:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Example hover background color */
+    }
+}
+
+body {
+    background: url('assets/images/bg-img.jpg');
+    background-size: cover;
+}
+
 
 .fix-nav {
     box-shadow: none !important;
+}
+
+.glass-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 55, 55, 0.3); /* Light overlay */
+    backdrop-filter: blur(20px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Ensure it is in front of the glass effect */
+    padding: 20px;
 }
