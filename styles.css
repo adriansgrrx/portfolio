@@ -11,18 +11,21 @@
     font-weight: 100;
 }
 
-button {
-    .transparent {
-        background-color: transparent;
-        border: 1px solid white; /* Example border color */
-        color: #fff; /* Example text color */
-        
-    }
+.btn {
+    background-color: transparent;
+}
 
-    /* Hover effect */
-    .transparent:hover {
-        background-color: rgba(255, 255, 255, 0.1); /* Example hover background color */
-    }
+.btn {
+    font-size: 12px;
+    font-weight: 100;
+    border: 0.5px solid white; /* Example border color */
+    color: #fff; /* Example text color */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.1); /* Example hover background color */
 }
 
 body {
