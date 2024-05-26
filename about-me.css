@@ -3,18 +3,12 @@
 *{
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-weight: 400;
+    font-weight: 400;    
 }
 
 body {
     background: url('assets/images/bg-img.jpg');
     background-size: cover;
-}
-
-.fix-nav{
-    background: rgba(57, 55, 55, 0.3); /* Light overlay */
-    backdrop-filter: blur(20px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 /* sidenav */
@@ -26,39 +20,10 @@ body {
     -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
-.name{
-    font-size: 3.5rem;
-    font-weight: 100;
-}
-
-.name b{
-    font-size: 3.5rem;
-    font-weight: 400;
-}
-
-.desc{
-    font-weight: 200;
-}
-
-
-.btn {
-    background-color: transparent;
-}
-
-.btn {
-    font-size: 12px;
-    font-weight: 100;
-    border: 0.5px solid white; /* Example border color */
-    color: #fff; /* Example text color */
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-}
-
-.btn:hover{
-    background-color: rgba(255, 255, 255, 0.1); /* Example hover background color */
-}
-
-.fix-nav {
+.fix-nav{
+    background: rgba(57, 55, 55, 0.3); /* Light overlay */
+    backdrop-filter: blur(20px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
     box-shadow: none !important;
 }
 
@@ -76,4 +41,34 @@ body {
 .container {
     position: relative;
     z-index: 2; /* Ensure it is in front of the glass effect */
+}
+
+#stick-me{
+    color: white;
+    position: sticky;
+    top: 65px;
+}
+
+#section{
+    font-weight: 300;
+}
+
+#section-desc{
+    font-weight: 300;
+}
+
+.custom-column-spacing {
+    margin-bottom: 20px;
+}
+
+.slider .slides li .caption {
+    font-family: 'poppins-semibold', sans-serif; 
+    font-size: 24px; 
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 20px;
+}
+
+.slider h5 {
+    font-family: 'poppins', sans-serif; 
+    font-size: 14px; 
 }

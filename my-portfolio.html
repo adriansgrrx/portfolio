@@ -9,46 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="about-me.html">
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Parallax</title>
+    <title>Adrian Esguerra</title>
 </head>
 <body>
-    <div class="navbar-fixed" style="z-index: 1000;">
-        <nav class="fix-nav nav-extended transparent">
+    <div class="navbar-fixed" style="z-index: 1002;">
+        <nav class="fix-nav">
             <div class="container">
-                <div class="nav-wrapper fix-nav">
-                    <a class="banner-logo hide-on-med-and-down">
-                        <img src="assets/images/banner-logo-fix-nav.png" class="responsive-img" alt="banner-logo-fix-nav" width="50">
+                <div class="nav-wrapper fix-nav center">
+                    <a href="#" class="banner-logo hide-on-med-and-down">
+                        <!-- <img src="assets/images/banner-logo-fix-nav-w.png" class="responsive-img" alt="banner-logo-fix-nav" width="45"> -->
+                        <!-- <a href="#">Adrian Esguerra</a> -->
                     </a>
                     <a href="#fix-nav-sv" class="sidenav-trigger">
                         <i class="fa-solid fa-bars"></i>
                     </a>
-                    <ul id="nav-mobile " class="right hide-on-med-and-down">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
+                    <ul id="nav-mobile " class="hide-on-med-and-down right">
+                        <li class="active"><a href="my-portfolio.html">Home</a></li>
+                        <li><a href="about-me.html">About</a></li>
                         <li><a href="#">My Projects</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="divider"></div>
-    <ul class="sidenav right" id="fix-nav-sv" style="z-index: 1001;">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">My Projects</a></li>
+    <ul class="sidenav right" id="fix-nav-sv" style="z-index: 1003;">
+        <li>
+            <img src="assets/images/banner-logo-fix-nav-w.png" width="80" style="margin-left: 18px; margin-top: 10px;">
+        </li>
+        <li class="active"><a href="my-portfolio.html" style="color: white;">Home</a></li>
+        <li><a href="about-me.html" style="color: white;">About Me</a></li>
+        <li><a href="#" style="color: white;">My Projects</a></li>
     </ul>
     <div class="container center">
         <br>
         <br>
-        <img src="assets/images/banner-logo.png" alt="banner-logo" class="responsize-img" width="150">
+        <img src="assets/images/banner-logo.png" alt="banner-logo" class="responsize-img" width="200">
         <div class="container">
-            <h1 class="name">Adrian Esguerra</h1>
-            <p class="desc">computer engineering student | art enthusiast | hatdog</p>
+            <!-- <div class="divider"></div> -->
+            <h1 class="name">Adrian <b>Esguerra</b></h1>
+            <p class="desc">computer engineering student ⋅ art enthusiast ⋅ hatdog</p>
             <br>
+            <!-- <div class="divider"></div> -->
             <div class="container">
                 <div class="row">
                     <div class="col l4 s4 m4">
@@ -63,7 +70,6 @@
                 </div>
             </div>
         </div>
-        <br>
     </div>
     <div class="glass-effect"></div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
